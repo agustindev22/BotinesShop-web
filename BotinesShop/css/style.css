@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 30px;
+    color:#333 ;
+    font-weight: 900;
+}
+header{
+  margin: 10px;
+background-color: whitesmoke;
+margin-bottom: 100px;
+padding: 20px;
+border: 1px solid lightslategrey;
+border-radius: 3px;
+flex-wrap: wrap;
+
+ 
+}
+.carrito{
+    width:30px;
+    text-align: center;
+     margin-right:5px;
+}
+#cuenta-carrito{
+   color: #333;
+    text-align: center;
+    font-weight: 900;
+    background-color:  rgb(67, 170, 67);;
+    border-radius: 7px;
+    padding: 3px;
+    position: absolute;
+
+
+}
+header nav{
+    display: flex;
+    justify-content:space-around;
+    margin-right: 20px;
+    position: relative;
+    margin: 20px;
+}
+
+
+.escondido{
+    display: none;
+}

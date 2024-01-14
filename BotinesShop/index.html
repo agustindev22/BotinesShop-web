@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logofutbol.png" type="image/x-icon">
+    <title>BotinesShop</title>
+</head>
+
+<body>
+    <header>
+       <h1 class="logo">BotinesShop</h1>
+       <button class="btn-abrir" id="abrir"><i class="bi bi-list"></i></button>
+        <nav class="nav-bar" id="nav">
+            <button class="btn-cerrar" id="cerrar"><i class="bi bi-x-circle"></i></button>
+            <ul class="list-nav">
+                <li><a href="#los+vendidos" class="link-nav">Los mas vendidos</a></li>
+                <li><a href="#pagos/envios " class="link-nav">Pagos/Envios</a></li>
+                <li><a href="#promociones" class="link-nav">Promociones</a></li>
+                <li><a href="carrito.html" class="link-nav  carrito-nav "> <i class="bi bi-cart-fill"></i></a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="titulo">Elegi tu preferido 👇:</h1>
+        <article class="marcas">
+            <a href="adidas.html" class="botines-marca"><img src="img/logoadidas.png" alt="">Ver aca</a>
+            <a href="nike.html" class="botines-marca"><img src="img/logonike.jpg" alt=""> Ver aca</a>
+        </article>
+    </section>
+
+    <section class="nosotros">
+        <h2 class="title-nosotros">Sobre Nosotros :</h2>
+        <p class="paragraph-nosotros">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis suscipit
+            delectus natus veritatis vitae maxime id, est omnis voluptas sint temporibus nisi praesentium perspiciatis
+            necessitatibus? Accusamus rerum aliquid quidem odit.
+            Accusamus placeat impedit quidem aliquid! Vel, iure neque? Nesciunt consequatur praesentium eveniet ipsum
+            illo iure ratione quasi ab impedit, delectus tempora eos explicabo minima aperiam esse rerum culpa,
+            reiciendis voluptatem.
+            Tempora optio nobis, iusto vitae quod repellendus? Unde rem, aliquam, corrupti laudantium, expedita ipsa
+            voluptate vero dolores iure itaque nam vitae suscipit ducimus at sapiente quis maxime magnam! Maiores, sed?
+            Ipsum distinctio quas vero voluptatum exercitationemfici</p>
+    </section>
+
+
+    <article class="vendidos" id="los+vendidos">
+        <p>Los mas vendidos :</p>
+    </article>
+    <div class="conteiner">
+        <section class="card">
+            <img class="img-card" src="los mas vendidos/Botines_X_Speedportal.1_Terreno_Firme_Dorado.png" alt="">
+            <h3 class="nombre-botin"> X SPEEDPORTAL 1 </h3>
+            <p class="descripcion"> ***UNISEX, HORMA GRANDE***</p>
+            <p class="precio">$62.000</p>
+        </section>
+
+        <section class="card">
+            <img class="img-card" src="los mas vendidos/Botines_X_Speedportal_Leyenda.1.png" alt="">
+            <h3 class="nombre-botin"> X SPEEDPORTAL LEYENDA</h3>
+            <p class="descripcion">
+                Para pies delgados recomendamos comprar el talle inferior. No aplica ningún tipo de descuento.</p>
+            <p class="precio">$75.000</p>
+        </section>
+
+
+        <section class="card">
+            <img class="img-card" src="los mas vendidos/cristiano-ronaldo.jpg" alt="">
+            <h3 class="nombre-botin"> Nike Mercurial Zoom Superfly 9 CR7 FG/MG Unisex</h3>
+            <p class="descripcion">Una combinación perfecta de velocidad, precisión y estilo. </p>
+            <p class="precio">$90.000</p>
+        </section>
+
+
+        <section class="card">
+            <img class="img-card" src="los mas vendidos/nike-violeta.png" alt="">
+            <h3 class="nombre-botin"> Nike Vapor 15 Club Fg/Mg Fútbol para Hombre
+            </h3>
+            <p class="descripcion">La suave piel sintética envuelve el pie para ofrecer una sujeción cómoda.</p>
+            <p class="precio">$80.000</p>
+        </section>
+    </div>
+   
+    <section class="distintas-formas" id="pagos/envios" > 
+
+    <article class="modos-pagos">
+        <img src="Formas-pagos/icons-seguro.png" alt="imagen seguro">
+        <h2>PAGO SEGURO </h2>
+        <p>A traves de cualquier tarjeta credito/debito</p>
+    </article>
+
+    <article class="modos-pagos">
+        <img src="Formas-pagos/icons-enviar.png" alt="imagen seguro">
+        <h2>ENVIOS GRATIS</h2>
+        <p>A partir de $50.00</p>
+    </article>
+
+    <article class="modos-pagos">
+        <img src="Formas-pagos/icons8-camión-100.png" alt="imagen seguro">
+        <h2>ENVIOS FLEX </h2>
+        <p> Entrega en 24/48hs</p>
+    </article>
+</section>
+
+
+
+
+
+    <footer class="footer">
+
+        <form class="formulario" id="promociones">
+            <p> Regristrate y enterate de los nuevos modelos y las promociones!</p>
+            <p class="descuento"> Si te registras ahora tenes un 20% de descuento para cualquier Botin !</p>
+            <input class="email" type="email" name="email" placeholder="Ingrese su Email">
+            <button class="btn" type="button">Enviar</button>
+           
+        </form>
+        <section class="nuestras-redes">
+            <h3>Buscanos por aca:</h3> 
+        <a href=""><img class="redes"  src="redes-sociales/icons-facebook.png" alt=""></a>
+        <a href=""><img class="redes"  src="redes-sociales/icons-instagram.png" alt=""> </a>
+    </section>
+         <h3 class="copy">Copy@BotinesShop2023</h3>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

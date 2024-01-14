@@ -1,0 +1,106 @@
+*{
+    font-family:  'Playfair Display', serif;
+}
+
+#productos-container{
+    width: 500px;
+    margin: auto;
+
+}
+
+.tarjeta-producto{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+#reiniciar{
+    background-color:#bd0003;
+}
+.menos{
+    background-color:#bd0003;
+}
+button{
+    align-items: center;
+    height: 20px;
+    width: 50px;
+    background-color: rgb(67, 170, 67);
+    color: whitesmoke;
+    border: none;
+    padding: 3px;
+    margin-left: 7px;
+    border-radius: 7px;
+    font-weight:500;
+    cursor: pointer;
+}
+
+.tarjeta-producto img{
+    height: 100px;
+    
+}
+#productos-container div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+}
+.cantidad{
+    margin-left: 5px;
+    font-weight: 900;
+    color: #333;
+  
+}
+.tarjeta-producto h3{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.tarjeta-producto p{
+    font-size: 20px;
+    font-weight: 900;
+
+}
+#totales{
+    text-align: center;
+
+}
+
+#totales p{
+    font-size: 19px;
+    font-weight: 900;
+}
+
+#totales button{
+    text-align: center;
+    width: 170px;
+   align-items: center;
+   height: 30px;
+   margin-bottom: 40px;
+   margin-top: 20px;
+   font-weight: 900;
+   font-size: 20px;
+}
+
+#carrito-vacio{
+    font-size: 25px;
+    text-align: center;
+}
+.flecha{
+    width: 30px;
+    margin-left: 60px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+@media screen and (max-width : 709px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    #productos-container div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

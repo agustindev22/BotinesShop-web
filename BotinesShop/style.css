@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    background-color:whitesmoke;
+    
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
+.logo{
+    font-weight: 900;
+    font-size: 30px;
+  
+   
+}
+header{
+    display: flex;
+    max-width: 100%;
+  
+    text-align: center;
+    justify-content: space-around;
+    margin: 10px ;
+}
+.list-nav{
+    display: flex;
+    gap: 2rem;
+   margin-top: 7px;
+}
+.link-nav{
+    color: #333;
+    font-weight: 900;
+    font-size: 25px;
+} 
+.btn-abrir , .btn-cerrar{
+    display: none;
+}
+
+/* --------------------------------------------------------media querry de cerrar y abrir--------------------------------------------------------- */
+
+@media screen and (max-width : 879px){
+    .btn-abrir ,
+    .btn-cerrar{
+        display: block;
+        font-size: 20px;
+        border-radius: 3px;
+        font-size: 24px;
+        background-color: transparent;
+        cursor: pointer;
+        color: whitesmoke;
+        background-color: #333;
+        border: none;
+        margin: 10px;
+    }
+    .btn-abrir{
+        color: #333;
+        background-color: whitesmoke;
+    }
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        background-color: #333;
+        box-shadow: 0 0 0 100vmax rgb(227, 227, 227);
+    }
+   .visible{
+    opacity: 1;
+    visibility: visible;
+   }
+   .list-nav{
+    flex-direction: column;
+    gap: 5rem;
+    margin: 55px;
+  
+   }
+   .link-nav{
+    color: whitesmoke;
+   }
+}
+
+
+
+
+
+
+/* ------------------------------------------ section de marcas----------------------------- */
+
+section{
+    margin-top: 90px ;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 37px;
+    margin:50px;
+    font-weight: 900;
+    color: #333;
+}
+
+.botines-marca{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #333;
+    font-size: 25px;
+    font-weight: 900;
+}
+.marcas img{
+    width: 500px;
+    height: 500px;
+    
+
+}
+.marcas{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.botines-marca{
+    border: 2px solid rgb(209, 208, 208);
+}
+.botines-marca:hover{
+    box-shadow: 1px 1px 1px 2px  rgb(209, 208, 208);
+    width: 520px;
+    height: 520px;
+    align-items: center;
+    transition: .7s;
+
+}
+
+/* ----------------------------------- Sobre nosotros-------------------------------------------- */
+
+.nosotros{
+  margin: 0 auto;
+    background-color: #333;
+    width:90% ;
+    padding: 15px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    border-radius: 7px;
+
+}
+.title-nosotros{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 900;
+}
+.paragraph-nosotros{
+    color: whitesmoke;
+    margin: 10px;
+    line-height: 1.7rem;
+}
+
+
+/* ---------------------------- los mas vendidos-------------------------- */
+
+.vendidos p {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+}
+.img-card{
+    width: 100%;
+    height: 450px;
+    
+}
+.conteiner{
+     display: flex;
+
+     flex-wrap: wrap;
+     align-items: center;
+    justify-content: center;
+  
+}
+
+
+.card{
+    margin: 10px;
+    border: 1px solid ;
+    max-width: 500px;
+   max-height: 650px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    
+
+}
+
+.nombre-botin{
+    font-size: 24px;
+    margin: 10px;
+    font-weight: 900;
+    color:#333;
+}
+.descripcion{
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 900;
+    color: #333;
+}
+.precio{
+    margin-top: 25px;
+    font-weight: 900;
+    color: whitesmoke;
+    background-color: #333;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 7px;
+   
+}
+.card:hover{
+    box-shadow:0px 0px 0px 2px #333 ;
+
+}
+
+
+/* -----------------------------------footer------------------------------ */
+
+.footer{
+  
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 97px;
+    border: 1px solid lightgrey;
+    margin-bottom: 40px;
+    background-color: lightgrey;
+
+}
+.formulario p{
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 1.5em;
+}
+.email{
+    width: 60%;
+    padding: 5px;
+}
+.btn{
+    border:1px solid #505050;
+    padding: 5px;
+    width: 70px;
+    background-color: whitesmoke;
+    color: #333;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 20px;
+}
+.btn:hover{
+    color:whitesmoke;
+    background-color: #333;
+    width: 75px;
+    transition: .7s;
+}
+.nuestras-redes{
+    margin-top: 50px;
+    text-align: center;
+}
+.nuestras-redes h3{
+    font-size: 25px;
+    font-weight: 900;
+}
+.redes{
+    width: 50px;
+    height: 50px;
+    margin: 16px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 7px;
+  
+}
+.redes:hover{
+    width: 55px;
+    height: 55px;
+    background-color: rgb(255, 247, 247);
+    transition: .7s;
+    
+}
+
+/* -------------------------------------COMPRA,ENVIO,PAGO---------------------------------------- */
+
+
+.distintas-formas{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  margin-top:65px;
+   
+}
+.modos-pagos p{
+    font-size: 18px;
+    font-weight: 900;
+    color: #333;
+}
+ .descuento{
+
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(215, 156, 6);
+}
+.modos-pagos h2{
+    font-weight: 900;
+    font-size: 35px;
+}
+
+
+
+
+
+/* -------------------------------- CSS DE LOS PRODUCTOS DE ADIDAS y NIKE------------------------------------------*/
+
+
+.carrito{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  
+}
+
+.img-productos{
+    width: 260px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px ;
+}
+.contenedor{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+   
+    
+}
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0,0,0.75) ;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+
+
+.informacion{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.informacion h2{
+    font-size: 25px;
+    font-weight: 900;
+}
+.precio-botines{
+    font-size: 17px;
+}
+
+.precio-botines span{
+    text-decoration: line-through;
+    color: brown;
+}
+
+.talle{
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid lightgrey;
+    font-size: 15px;
+    
+}
+
+.compra{
+    font-size: 17px;
+    font-weight: 900;
+    color: #333;
+    border: 1px solid lightgrey;
+    padding: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.compra:hover{
+    background-color:#333;
+    color: whitesmoke;
+    padding: 5px;
+    border: none;
+}
+
+  /*.header-carrito{
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    gap: 5rem;
+    border: 1px solid ;
+    border-radius: 7px;
+    background-color:whitesmoke;
+    padding: 5px;
+    width: 500px;
+    margin-left: 440px;
+    
+    
+}
+

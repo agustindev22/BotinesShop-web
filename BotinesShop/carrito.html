@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <script src="js/adidas.js"></script>
+    <script src="js/carrito.js"defer></script>
+    <script src="js/cartService.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">BotinesShop</a>
+            <section>
+                
+                <a href="#"><img class="carrito" id="cart" src="carrito/carrito-de-compras.png" alt="carrito de compras"><span class="cuenta-carrito" id="cuenta-carrito">0</span></a>
+                <a href="index.html"><img src="carrito/icons-flecha.png" class="flecha" alt="flecha"></a>
+            </section>
+
+        </nav>
+    </header>
+    <main>
+        <p id="carrito-vacio">Tu carrito esta vacio😢. <a href="index.html">Compra aca.. </a></p>
+        <section id="productos-container"></section>
+            <section id="totales">
+                <p>Total unidades: <span id="unidades">0</span> </p>
+                <p>Total precio : $ <span id="precio">0</span></p>
+                <button >Comprar</button>
+                <button id="reiniciar">Reiniciar Carrito</button>
+            </section>
+    </main>
+</body>
+</html>
